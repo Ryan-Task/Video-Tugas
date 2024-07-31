@@ -4,17 +4,22 @@ div {
 }
 
 h1 {
-  color: white;
+  color: #ecc8b2;
   border: 2px d;
-  background-color: brown;
+  background-color: #8a662b;
   /* dotted yaitu border titik titik */
   position: sticky;
+  border: 1px solid black;
+
   top: 10px;
 }
 
 h2 {
-  color: red;
-  border: 1px dashed brown;
+  color: #8a662b;
+  border: 2px solid brown;
+  background-color: #cbc5c1;
+  font-weight: bold;
+  font-family: "Segoe UI";
   /* border dashed yaitu border dengan garis titik titik */
 }
 
@@ -22,7 +27,7 @@ p {
   margin-top: 50px;
   border: 1px solid blue;
   /* solid artinya border dengan garis */
-  padding: 20px;
+  padding: 30px;
   /* padding merupakan garis batas antara tulisan dengan border */
 }
 
@@ -30,4 +35,36 @@ img {
   margin: 30px 50px 30px 50px;
   /* top,right,bottom,left */
   border: 1px solid black;
+}
+
+ul li {
+  background: #ebeced;
+}
+
+ol li {
+  background: #ebeced;
+}
+
+#paragraf1p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* hashtag untuk id yang dimana cuman bisa menyimpan 1 css*/
+}
+
+.font {
+  font-family: "Lucida Sans";
+  font-size: 14px;
+  /* kalau titik digunakan untuk menyimpan lebih dari 1 font */
+}
+
+.warna {
+  background: #4c586f;
+  color: white;
+}
+
+.miring {
+  font-style: italic;
+}
+
+.tebal {
+  font-weight: bold;
 }
