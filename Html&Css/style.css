@@ -1,11 +1,19 @@
+* {
+  margin: 0;
+}
+
 div {
-  width: 50%;
+  width: 70vw;
   margin: auto;
+}
+
+.content {
+  margin-top: 5%;
 }
 
 h1 {
   color: #ecc8b2;
-  border: 2px d;
+  border: 2px;
   background-color: #8a662b;
   /* dotted yaitu border titik titik */
   position: sticky;
@@ -67,4 +75,68 @@ ol li {
 
 .tebal {
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #4c586f;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  /* list-style: none; untuk menghilangkan titik */
+  /* margin: 0px;
+  padding-left: 0px;*/
+  /* margin opx dan padding left 0px buat rata kiri */
+}
+
+ul li {
+  color: white;
+  background: #4c586f;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+}
+ul li a {
+  color: white;
+}
+
+ul li:hover {
+  background: #8a662b;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: #ecc8b2;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 0.5rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul :hover {
+  visibility: visible;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: #cbc5c1;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  ul li {
+    background: #ecc8b2;
+  }
 }
