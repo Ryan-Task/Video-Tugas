@@ -18,7 +18,6 @@ h1 {
   /* dotted yaitu border titik titik */
   position: sticky;
   border: 1px solid black;
-
   top: 10px;
 }
 
@@ -28,6 +27,7 @@ h2 {
   background-color: #cbc5c1;
   font-weight: bold;
   font-family: "Segoe UI";
+  text-align: center;
   /* border dashed yaitu border dengan garis titik titik */
 }
 
@@ -39,6 +39,10 @@ p {
   /* padding merupakan garis batas antara tulisan dengan border */
 }
 
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
 img {
   margin: 30px 50px 30px 50px;
   /* top,right,bottom,left */
@@ -51,6 +55,12 @@ ul li {
 
 ol li {
   background: #ebeced;
+}
+
+table {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 #paragraf1p {
@@ -130,13 +140,13 @@ ul li ul li {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background: #cbc5c1;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
+/* @media only screen and (max-width: 600px) {
+    body {
+      background: #cbc5c1;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
 
-  ul li {
-    background: #ecc8b2;
-  }
-}
+    ul li {
+      background: #ecc8b2;
+    }
+  } */
