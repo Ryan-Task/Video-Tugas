@@ -21,6 +21,10 @@ h1 {
   top: 10px;
 }
 
+.rapi {
+  margin: auto;
+}
+
 h2 {
   color: #8a662b;
   border: 2px solid brown;
@@ -29,10 +33,10 @@ h2 {
   font-family: "Segoe UI";
   text-align: center;
   /* border dashed yaitu border dengan garis titik titik */
+  margin-top: 2cm;
 }
 
 p {
-  margin-top: 50px;
   border: 1px solid blue;
   /* solid artinya border dengan garis */
   padding: 30px;
