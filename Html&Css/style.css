@@ -2,6 +2,46 @@
   margin: 0;
 }
 
+.content {
+  margin-top: 2%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  margin-top: 2%;
+}
+
+header img {
+  width: 50px;
+  float: left;
+  margin-right: 3%;
+}
+
+header h1 {
+  margin-left: 6%;
+}
+
+nav {
+  clear: both;
+}
+
+nav ul {
+  margin-top: 3%;
+}
+
+footer {
+  margin: 3%;
+  text-align: center;
+}
+
+section p {
+  margin-top: 2%;
+}
+
 div {
   width: 70vw;
   margin: auto;
@@ -12,12 +52,9 @@ div {
 }
 
 h1 {
-  color: #ecc8b2;
   border: 2px;
-  background-color: #8a662b;
   /* dotted yaitu border titik titik */
   position: sticky;
-  border: 1px solid black;
   top: 10px;
 }
 
@@ -37,7 +74,6 @@ h2 {
 }
 
 p {
-  border: 1px solid blue;
   /* solid artinya border dengan garis */
   padding: 30px;
   /* padding merupakan garis batas antara tulisan dengan border */
@@ -47,10 +83,11 @@ p {
   display: flex;
   justify-content: center;
 }
+
 img {
-  margin: 30px 50px 30px 50px;
   /* top,right,bottom,left */
   border: 1px solid black;
+  width: 250px;
 }
 
 ul li {
