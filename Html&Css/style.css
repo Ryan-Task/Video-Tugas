@@ -6,6 +6,12 @@
   margin-top: 2%;
 }
 
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
 .wrapper {
   width: 80%;
   margin: auto;
@@ -79,15 +85,10 @@ p {
   /* padding merupakan garis batas antara tulisan dengan border */
 }
 
-.img-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 img {
   /* top,right,bottom,left */
   border: 1px solid black;
-  width: 250px;
+  width: 200%;
 }
 
 ul li {
@@ -191,3 +192,5 @@ ul li ul li {
       background: #ecc8b2;
     }
   } */
+
+
