@@ -9,3 +9,20 @@
     margin-left: auto;
   }
 }
+
+.container {
+  padding: 0.5rem;
+}
+
+.container h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.card img{
+  height: 180px;
+}
+
+.card{
+  width: 18rem;
+}

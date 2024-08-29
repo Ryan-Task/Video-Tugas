@@ -19,7 +19,7 @@
             height="100"
             loading="anjay"
           />
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -43,7 +43,13 @@
                 <a class="nav-link" href="#">Promo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">kontak</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >kontak</a
+                >
               </li>
             </ul>
           </div>
@@ -124,10 +130,10 @@
 
     <!-- jumbotron -->
 
-    <div class="row align-items-md-stretch">
+    <div class="row align-items-md-stretch text-center">
       <div class="container">
-        <div class="h-100 p-5 text-white bg-primary border rounded-3">
-          <h2 class="display-3">hello</h2>
+        <div class="h-100 p-5 text-white bg-primary border -3">
+          <h2 class="display-1">hello</h2>
           <hr class="my-4" />
           <p class="lead">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -136,31 +142,115 @@
             blanditiis cum aliquam? Nam quasi officiis voluptatum deleniti.
           </p>
           <button class="btn btn-outline-primary bg-dark" type="button">
-            Example button
+            Siuuuuuuuuuuuuuuuuu
           </button>
         </div>
       </div>
     </div>
 
+    <!-- card -->
     <div class="container">
       <div class="row">
-        <div class="col lima kuning">kolom 1</div>
-        <div class="col lima hijau">kolom 2</div>
-        <div class="col lima merah">kolom 3</div>
-      </div>
-      <div class="row">
-        <div class="col-xl-8 col-lg-2 col-md-4 col-sm-2 lima merah">
-          baris 2 kolom 1
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0" style="width: 18rem">
+            <img
+              src="/bootstrap/images/Red_2019_Ferrari_SF90_Stradale_(48264238897)_(cropped).jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ferrari SF90</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Alamak</a>
+            </div>
+          </div>
         </div>
-        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 lima kuning">
-          baris 2 kolom 2
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0" style="width: 18rem">
+            <img
+              src="/bootstrap/images/download.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Porsche</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Alamak</a>
+            </div>
+          </div>
         </div>
-        <div class="col-xl-2 col-lg-6 col-md-4 col-sm-4 lima hijau">
-          baris 2 kolom 2
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0" style="width: 18rem">
+            <img
+              src="/bootstrap/images/488.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ferrari 488</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Alamak</a>
+            </div>
+          </div>
         </div>
-        <!-- xl=extra large,lg=large,md=medium,sm=small, -->
       </div>
     </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Form Kontak</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <h1>Isi form ini</h1>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
