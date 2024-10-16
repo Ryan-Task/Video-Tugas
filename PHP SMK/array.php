@@ -22,9 +22,7 @@ foreach ($nama as $key ) {
 }
 
 
-//array asosiatif
 
-//cara 1
 $nama = array(
     "ryan" => "surabaya",
     "surya" => "sidoarjo",
