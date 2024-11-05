@@ -7,6 +7,19 @@
 
     require_once"../pelanggan/function.php";
 
+    if (isset($_GET['update'])) {
+        $id=$_GET['update'];
+        require_once "update.php";
+    }
+
+
+    if (isset($_GET['hapus'])) {
+        $id=$_GET['hapus'];
+        require_once "../kategori/delete.php";
+    }
+
+    echo '<br>';
+
     $sql = "SELECT idkategori FROM tbkategori";
     $results = mysqli_query($koneksi,$sql); 
     
@@ -52,6 +65,8 @@
     <tr>
         <th>No</th>
         <th>Kategori</th>
+        <th>Hapus</th>
+        <th>Update</th>
     </tr>
     ';
     $no = $mulai ;
@@ -60,6 +75,8 @@
             echo '<tr>';
             echo '<td>'.$no++.'</td>';
             echo '<td>'.$row['kategori'].'</td>';
+            echo '<td><a href="?hapus='.$row['idkategori'].'">'.'Hapus'.'</a></td>';
+            echo '<td><a href="?update='.$row['idkategori'].'">'.'update'.'</a></td>';
             echo '</tr>';
         }
     }
