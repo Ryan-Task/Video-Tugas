@@ -1,0 +1,2 @@
+<h1>ini php contact</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloremque optio blanditiis modi libero ab quis dolore magni. Quia enim maiores voluptatibus vero porro nihil quae esse officia nobis praesentium.</p>
