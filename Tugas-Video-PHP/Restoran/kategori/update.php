@@ -13,7 +13,6 @@
 
 
 <h1>Update Kategori</h1>
-
 <div class="form-group ">
     <form action="" method="post">
         <div class="form-group w-50">

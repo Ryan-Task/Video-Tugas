@@ -16,7 +16,7 @@
         $cart = 0;
 
         foreach ($_SESSION as $key => $value) {
-            if ($key<>'pelanggan' && $key<>'idpelanggan') {
+            if ($key<>'pelanggan' && $key<>'idpelanggan'&& $key<>'user'&& $key<>'level'&& $key<>'iduser') {
                 $id = substr($key,1);
 
                 $sql = "SELECT * FROM tbmenu WHERE idmenu=$id";
@@ -64,6 +64,7 @@
                         <div class="float-end me-4 text-primary"><a href="?log=logout">Logout</a></div>
                         <div class="float-end me-4 mr-5 ">Pelanggan : '.$_SESSION['pelanggan'].'</div>
                         <div class="float-end me-4 mr-5 ">Cart :( <a href="?f=home&m=beli"> '.cart().' </a>)</div>
+                        <div class="float-end me-4 mr-5 "><a href="?f=home&m=histori"> Histori : <a/> </div>
 
                     
                     ';

@@ -1,5 +1,6 @@
 <?php
-    $jumlahdata = $db->rowCOUNT("SELECT idorder FROM vorder ");
+    $email = $_SESSION['pelanggan'];
+    $jumlahdata = $db->rowCOUNT("SELECT idorder FROM vorder WHERE email = '$email' ");
     $banyak = 2;
     $halaman = ceil($jumlahdata / $banyak);
 
@@ -11,7 +12,7 @@
         $mulai = 0;
     }
 
-    $sql = "SELECT * FROM vorder ORDER BY status,idorder ASC LIMIT $mulai,$banyak";
+    $sql = "SELECT * FROM vorder WHERE email = '$email' ORDER BY tglorder DESC LIMIT $mulai,$banyak";
     $row = $db->getALL($sql);
     // var_dump($row);
 
@@ -21,7 +22,7 @@
 
 
 <div>
-    <h3 class="float-start">Order Pembelian</h3>
+    <h3 class="float-start">Histori Pembelian</h3>
 </div>
 
 <table class="table table-bordered border-dark">
@@ -29,34 +30,19 @@
     <thead>
         <tr>
             <th>Nomer</th>
-            <th>Pelanggan</th>
             <th>Tanggal</th>
             <th>Total</th>
-            <th>Bayar</th>
-            <th>Kembali</th>
-            <th>Status</th>
+            <th>Detail</th>
         </tr>
     </thead>
     <tbody>
         <?php if(!empty($row)) {?>
         <?php foreach ($row as $r) :?>
-        <?php 
-                
-            if ($r['status']==0) {
-                $status='<td><a href="?f=order&m=bayar&id='.$r['idorder'].'">Detail</a></td>';
-        }else {
-            $status = '<td>LUNAS</td>';
-        }
-
-        ?>
         <tr>
             <td><?php echo $nomor++?></td>
-            <td><?php echo $r['pelanggan'] ?></td>
             <td><?php echo $r['tglorder'] ?></td>
             <td><?php echo $r['total'] ?></td>
-            <td><?php echo $r['bayar'] ?></td>
-            <td><?php echo $r['kembali'] ?></td>
-            <?php echo $status ?>
+            <td><a href="?f=home&m=detail&id=<?php echo $r['idorder'] ?>">Detail</a></td>
         </tr>
         <?php endforeach ?>
         <?php } ?>
@@ -66,7 +52,7 @@
     <?php
     
     for ($i=1; $i <= $halaman ; $i++) { 
-        echo '<a href = "?f=order&m=select&p='.$i.'">'.$i.'</a>';
+        echo '<a href = "?f=home&m=histori&p='.$i.'">'.$i.'</a>';
         echo '&nbsp &nbsp &nbsp';
     }
 ?>
